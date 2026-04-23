@@ -1,0 +1,34 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Nav from "@/components/layout/Nav";
+import Footer from "@/components/layout/Footer";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+
+export const metadata: Metadata = {
+  title: "Chandra Rohin — Product Manager",
+  description: "Product manager portfolio: resume, projects, and case studies.",
+  openGraph: {
+    title: "Chandra Rohin — Product Manager",
+    description: "Product manager portfolio showcasing resume and key projects.",
+    siteName: "Chandra Rohin",
+    type: "website",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col font-[family-name:var(--font-inter)]">
+        <Nav />
+        <main className="flex-1 pt-16">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
