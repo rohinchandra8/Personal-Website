@@ -6,7 +6,7 @@ import EducationItem from "@/components/resume/EducationItem";
 import Badge from "@/components/ui/Badge";
 
 export const metadata = {
-  title: "Resume — Chandra Rohin",
+  title: "Resume — Rohin Chandra",
   description: "Work experience, education, and skills.",
 };
 

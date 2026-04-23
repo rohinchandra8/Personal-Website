@@ -7,12 +7,12 @@ import Footer from "@/components/layout/Footer";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Chandra Rohin — Product Manager",
+  title: "Rohin Chandra — Product Manager",
   description: "Product manager portfolio: resume, projects, and case studies.",
   openGraph: {
-    title: "Chandra Rohin — Product Manager",
+    title: "Rohin Chandra — Product Manager",
     description: "Product manager portfolio showcasing resume and key projects.",
-    siteName: "Chandra Rohin",
+    siteName: "Rohin Chandra",
     type: "website",
   },
 };

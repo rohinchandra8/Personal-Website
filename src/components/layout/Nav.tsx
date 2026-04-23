@@ -8,7 +8,6 @@ import { cn } from "@/lib/utils";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/resume", label: "Resume" },
   { href: "/projects", label: "Projects" },
 ];
 
@@ -20,7 +19,7 @@ export default function Nav() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
       <div className="mx-auto max-w-5xl px-6 h-16 flex items-center justify-between">
         <Link href="/" className="text-lg font-semibold text-gray-900 hover:text-blue-700 transition-colors">
-          Chandra Rohin
+          Rohin Chandra
         </Link>
 
         {/* Desktop nav */}

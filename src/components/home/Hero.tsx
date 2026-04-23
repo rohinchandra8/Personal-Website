@@ -12,7 +12,7 @@ export default function Hero() {
               Product Manager
             </p>
             <h1 className="text-5xl font-bold text-gray-900 leading-tight mb-4">
-              Hi, I&apos;m Chandra Rohin
+              Hi, I&apos;m Rohin Chandra
             </h1>
             <p className="text-xl text-gray-500 leading-relaxed mb-8">
               I build products that people love — from discovery to launch. Specializing in B2B SaaS, consumer mobile, and 0→1 product development.

@@ -2,7 +2,7 @@ import { projects } from "@/lib/content/projects";
 import ProjectCard from "@/components/projects/ProjectCard";
 
 export const metadata = {
-  title: "Projects — Chandra Rohin",
+  title: "Projects — Rohin Chandra",
   description: "Product case studies and key projects.",
 };
 
