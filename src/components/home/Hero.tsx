@@ -1,63 +1,36 @@
 import Link from "next/link";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="min-h-[calc(100vh-4rem)] flex items-center">
-      <div className="mx-auto max-w-5xl px-6 py-20 w-full">
-        <div className="flex flex-col-reverse gap-12 sm:flex-row sm:items-center sm:justify-between">
-          {/* Text content */}
-          <div className="flex-1 max-w-xl">
-            <p className="text-sm font-semibold uppercase tracking-widest text-blue-700 mb-3">
-              Product Manager
-            </p>
-            <h1 className="text-5xl font-bold text-gray-900 leading-tight mb-4">
-              Hi, I&apos;m Rohin Chandra
-            </h1>
-            <p className="text-xl text-gray-500 leading-relaxed mb-8">
-              I build products that people love — from discovery to launch. Specializing in B2B SaaS, consumer mobile, and 0→1 product development.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Link
-                href="/projects"
-                className="inline-flex items-center gap-2 rounded-lg bg-blue-700 px-5 py-2.5 text-sm font-semibold text-white hover:bg-blue-800 transition-colors"
-              >
-                View Projects
-                <ArrowRight size={16} />
-              </Link>
-              <Link
-                href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 hover:bg-gray-50 transition-colors"
-              >
-                Download Resume
-                <Download size={16} />
-              </Link>
-            </div>
-          </div>
+    <section className="flex-1 flex flex-col items-center justify-center px-6 relative overflow-hidden">
+      {/* Subtle radial gradient glow */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-10%,rgba(255,255,255,0.07),transparent)] pointer-events-none" />
 
-          {/* Avatar placeholder */}
-          <div className="flex-shrink-0 flex justify-center sm:justify-end">
-            <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full bg-blue-100 flex items-center justify-center overflow-hidden">
-              <span className="text-6xl text-blue-300 font-bold select-none">CR</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Skills strip */}
-        <div className="mt-20 grid grid-cols-2 sm:grid-cols-4 gap-4">
-          {[
-            { label: "Discovery & Research", sub: "User interviews, synthesis" },
-            { label: "Roadmapping", sub: "Strategy, prioritization" },
-            { label: "Analytics", sub: "SQL, Amplitude, Mixpanel" },
-            { label: "Execution", sub: "Agile, cross-functional" },
-          ].map(({ label, sub }) => (
-            <div key={label} className="rounded-xl border border-gray-200 bg-white p-4">
-              <p className="text-sm font-semibold text-gray-800">{label}</p>
-              <p className="text-xs text-gray-500 mt-1">{sub}</p>
-            </div>
-          ))}
+      <div className="relative text-center max-w-2xl">
+        <p className="text-xs font-medium uppercase tracking-widest text-zinc-500 mb-4">
+          Product Manager · Microsoft
+        </p>
+        <h1 className="text-5xl sm:text-6xl font-bold text-white leading-tight mb-5">
+          Rohin Chandra
+        </h1>
+        <p className="text-lg text-zinc-400 leading-relaxed mb-8 max-w-lg mx-auto">
+          Engineer turned PM. I build enterprise software at Microsoft — from HR SaaS to cloud storage. Harvard CS, previously SWE at LinkedIn.
+        </p>
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          <Link
+            href="/projects"
+            className="inline-flex items-center gap-2 rounded-lg bg-white px-5 py-2.5 text-sm font-semibold text-black hover:bg-zinc-200 transition-colors"
+          >
+            View Projects
+            <ArrowRight size={15} />
+          </Link>
+          <Link
+            href="mailto:rohinchandra@gmail.com"
+            className="inline-flex items-center gap-2 rounded-lg border border-white/15 px-5 py-2.5 text-sm font-semibold text-zinc-300 hover:border-white/30 hover:text-white transition-colors"
+          >
+            Get in touch
+          </Link>
         </div>
       </div>
     </section>

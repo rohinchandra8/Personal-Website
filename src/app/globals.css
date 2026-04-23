@@ -1,16 +1,7 @@
 @import "tailwindcss";
 
-:root {
-  --background: #f8f9fa;
-  --foreground: #111827;
-  --card: #ffffff;
-  --primary: #1d4ed8;
-  --primary-foreground: #ffffff;
-  --muted-foreground: #6b7280;
-  --border: #e5e7eb;
-}
-
+html,
 body {
-  background-color: var(--background);
-  color: var(--foreground);
+  background-color: #000000;
+  color: #ffffff;
 }

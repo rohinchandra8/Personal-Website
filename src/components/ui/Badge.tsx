@@ -1,10 +1,10 @@
 import { cn } from "@/lib/utils";
 
 const variants = {
-  default: "bg-blue-100 text-blue-800",
-  muted: "bg-gray-100 text-gray-700",
-  success: "bg-green-100 text-green-800",
-  warning: "bg-yellow-100 text-yellow-800",
+  default: "bg-white/10 text-white border border-white/20",
+  muted: "bg-white/5 text-zinc-400 border border-white/10",
+  success: "bg-emerald-500/15 text-emerald-400 border border-emerald-500/20",
+  warning: "bg-yellow-500/15 text-yellow-400 border border-yellow-500/20",
 };
 
 interface BadgeProps {

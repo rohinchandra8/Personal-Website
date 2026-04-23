@@ -6,6 +6,7 @@ export interface WorkExperience {
   location: string;
   bullets: string[];
   skills: string[];
+  products?: Array<{ name: string; bullets: string[] }>;
 }
 
 export interface Education {

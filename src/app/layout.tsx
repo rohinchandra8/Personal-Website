@@ -23,10 +23,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-[family-name:var(--font-inter)]">
+    <html lang="en" className={`${inter.variable} h-full antialiased bg-black`}>
+      <body className="min-h-full flex flex-col bg-black text-white font-[family-name:var(--font-inter)]">
         <Nav />
-        <main className="flex-1 pt-16">{children}</main>
+        <main className="flex-1 pt-16 flex flex-col">{children}</main>
         <Footer />
       </body>
     </html>
